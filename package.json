@@ -1,0 +1,30 @@
+{
+  "name": "januscli-tasks",
+  "version": "0.0.1",
+  "description": "Build Task runner for JanusCLI",
+  "main": "es5/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel --watch --presets es2015 lib -d es5",
+    "prepublish": "babel --presets es2015 lib -d es5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thebeansgroup/januscli-tasks.git"
+  },
+  "author": "Ad Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thebeansgroup/januscli-tasks/issues"
+  },
+  "homepage": "https://github.com/thebeansgroup/januscli-tasks#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "inquirer": "^0.12.0",
+    "shelljs": "^0.6.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0"
+  }
+}
